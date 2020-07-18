@@ -2,7 +2,7 @@ name: Docker
 
 on:
   schedule:
-      - cron:  '*/5 * * * *'
+      - cron:  '0 0 * * *'
 
 env:
   IMAGE_NAME: docker-rust-postgres
