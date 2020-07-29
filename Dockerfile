@@ -15,3 +15,4 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
     && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
 RUN cargo install diesel_cli --no-default-features --features postgres
+RUN cargo graphql_client_cli
